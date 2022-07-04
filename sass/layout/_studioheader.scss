@@ -1,0 +1,16 @@
+.studio-header {
+  height: 80px;
+  display: flex;
+  border-bottom: 1px solid #ececec;
+  background: var(--brand-second-color);
+
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+&__logo {
+    padding-right: 93px;
+}
+}

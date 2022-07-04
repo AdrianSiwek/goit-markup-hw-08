@@ -1,0 +1,49 @@
+.information {
+    text-align: left;
+
+
+&__logo {
+    text-align: left;
+}
+
+&__adres {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--brand-second-color);
+    padding-top: 20px;
+    padding-bottom: 9px;
+}
+}
+
+.footer-information {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    list-style: none;
+
+
+&__link {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    padding-bottom: 9px;
+    text-align: left;
+    color: var(--brand-contact-color);
+    transition: var(--transition);
+    transition-property: color;
+
+
+&:active,
+&:hover,
+&:focus {
+    color: var(--brand-mlight-color);
+}
+}
+}

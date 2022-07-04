@@ -1,0 +1,80 @@
+.policy {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__link {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.03em;
+        text-decoration-line: underline;
+        color: #757575;
+        font-size: 14px;
+        line-height: 1.71;
+        transition: var(--transition);
+        transition-property: text-decoration, color;
+
+        &:active,
+        &:hover,
+        &:active {
+            color: var(--brand-mlight-color);
+        }
+        }
+    
+        &-button {
+            margin-left: 124px;
+            margin-top: 30px;
+        }
+}
+
+.modal-form__policy--text {
+    cursor: pointer;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+
+
+&::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 15px;
+    outline: 1px solid #212121;
+    border-radius: 2px;
+    margin-right: 7px;
+    cursor: pointer;
+    transition: var(--transition);
+    transition-property: background-color;
+}
+}
+
+.modal-form__policy:checked+.modal-form__policy--text::before {
+    background-color: #2196f3;
+    width: 16px;
+    height: 15px;
+    border: none;
+    background-image: url(../image/vector1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 2px;
+    outline: none;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+

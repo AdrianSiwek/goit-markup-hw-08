@@ -1,0 +1,11 @@
+.studio-footer {
+  background: var(--brand-two-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+&__container {
+  display: flex;
+  align-items: flex-start;
+  color: rgba(255, 255, 255, 0.6);
+}
+}
