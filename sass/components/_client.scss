@@ -1,25 +1,24 @@
+//mobile//
 .client {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  align-items: center;
+  flex-wrap: wrap;
 
 
 &__item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  margin-bottom: 30px;
+  width: 200px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
-
-
-& {
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition-property: fill, border-color;
-}
-
 
 &:active,
 &:hover,
@@ -32,5 +31,27 @@
 &__icon {
   transition: var(--transition);
   transition-property: fill;
+}
+}
+
+@media screen and (min-width: 1200px) {
+  .client {
+    flex-wrap: nowrap;
+    
+    &__item {
+      width: 170px;
+      margin-bottom: 0;
+}
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .client {
+    justify-content: space-evenly;
+    
+    &__item {
+    width: 226px;
+      
+}
 }
 }

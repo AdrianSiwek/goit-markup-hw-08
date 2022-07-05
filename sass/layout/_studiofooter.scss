@@ -1,11 +1,36 @@
-.studio-footer {
+.studio-footer{
   background: var(--brand-two-color);
   padding-bottom: 60px;
   padding-top: 60px;
+
+  &_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+//desktop//
+@media screen and (min-width: 1200px){
+.studio-footer {
 
 &__container {
   display: flex;
   align-items: flex-start;
   color: rgba(255, 255, 255, 0.6);
 }
+}
+}
+
+//tablet//
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer {
+    &__container {
+      align-items: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
 }

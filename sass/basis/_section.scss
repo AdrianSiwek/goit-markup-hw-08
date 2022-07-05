@@ -1,9 +1,37 @@
 .section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &-menu{
+    padding-top: 60px;
+  }
+
+  &-offer{
+    padding-bottom: 40px;
+  }
+
+    &__categories {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 1.18;
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-bottom: 50px;
+    }
+  
+    &__team {
+      background: #f5f4fa;
+    }
+}
+
+/*
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 
   &-menu {
-        padding-top: 94px;
+      padding-top: 94px;
     }
   &-offer {
     padding-bottom: 64px;
@@ -23,3 +51,4 @@
         background: #f5f4fa;
     }
 }
+*/

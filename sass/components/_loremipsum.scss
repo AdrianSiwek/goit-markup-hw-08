@@ -1,5 +1,51 @@
 .elaboration {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+
+&__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 120px;
+  padding: 25px 100px 25px 100px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  list-style-type: none;
+}
+
+&__item {
+ max-width: 100%;
+
+
+&--name {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+&--description {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--brand-contact-color);
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+}
+}
+
+/*
+.elaboration {
+  display: flex;
   margin: 0 -15px;
   list-style: none;
   flex-wrap: wrap;
@@ -42,4 +88,4 @@
   margin-top: 10px;
 }
 }
-}
+}*/

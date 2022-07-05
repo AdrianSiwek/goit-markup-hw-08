@@ -1,20 +1,39 @@
 
-.description{
-  display:none
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), 
+screen and (min-resolution: 192dpi) and (min-width:320px) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (min-width:320px) and (max-width: 767px){
+.description{  
+  background-image: linear-gradient(0deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%),
+      url("../image/mobile/header_mobile@2x.jpg");
+}
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px){
 .description {
+  display: flex;
+  min-height: 400px;
   background-image: linear-gradient(
       0deg,
       rgba(47, 48, 58, 0.4) 0%,
       rgba(47, 48, 58, 0.4) 100%
     ),
-    url("/image/header_mobile480x400.jpg");
-  background-position: center;
+    url("../image/mobile/header_mobile480x400.jpg");
+  background-position: center top;
   background-repeat: no-repeat;
-  background-size: 480px 400px;
+  background-size: 480px;
+}
+}
+.description__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-width: auto;
+    }
 
-&__name{
+.description__name{
   font-family: "Roboto";
   font-weight: 900;
   font-size: 26px;
@@ -23,9 +42,24 @@
   text-transform: capitalize;
   letter-spacing: 0.06em;
   color: var(--brand-second-color);
-}
+  max-width: 365px;
 }
 
+/*
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .description {
+    display: flex;
+    min-height: 400px;
+    background-image: linear-gradient(0deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%),
+      url("../image/mobile/header_tablet768x400.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 768px;
+  }
+}
+*/
 /*
 .description {
   display: flex;
@@ -39,16 +73,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1600px;
+*/
 
-
-&__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-width: auto;
-}
-
+/*
 &__name {
   font-family: "Roboto";
   font-weight: 900;
