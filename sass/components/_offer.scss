@@ -15,7 +15,6 @@
   line-height: 2;
   letter-spacing: 0.06em;
 
-
 &--title {
   padding-left: 24px;
   padding-right: 24px;
@@ -43,10 +42,6 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow;
 
-&:hover .describe {
-    transform: translateY(0);
-}
-
 &:active,
 &:hover,
 &:focus {
@@ -55,12 +50,12 @@
     }
 }
 
-&__img {
+& > img {
   object-fit: cover;
 }
 
 &-discription {
-  z-index: 999;
+  z-index: 1001;
   width: 100%;
   left: 0;
   bottom: 0;
@@ -74,6 +69,7 @@
 }
 }
 
-
-
+.offer_photo:hover .describe {
+    transform: translateY(0);
+}
 

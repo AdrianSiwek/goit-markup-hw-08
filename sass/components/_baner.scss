@@ -3,14 +3,16 @@
   display:none
 }
 
-.description{
-  background-image: linear-gradient(0deg,
-        rgba(47, 48, 58, 0.4) 0%,
-        rgba(47, 48, 58, 0.4) 100%),
-      url("../image/mobile/header_mobile.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 480px 400px;
+.description {
+  background-image: linear-gradient(
+      0deg,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0.4) 100%
+    ),
+    url("/image/header_mobile480x400.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 480px 400px;
 
 &__name{
   font-family: "Roboto";
