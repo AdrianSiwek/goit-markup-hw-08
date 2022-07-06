@@ -43,3 +43,12 @@
 }
 }
 }
+
+//mobile//
+@media screen and (min-width: 320px) and (max-width: 767px) {
+.navi {
+    display: none;
+    overflow: hidden;
+}
+}
+
