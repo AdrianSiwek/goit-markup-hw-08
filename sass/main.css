@@ -316,6 +316,122 @@
   cursor: pointer;
 }
 
+.menu-toggle {
+  margin-left: auto;
+  margin-right: 0;
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+.menu-toggle__icon {
+  fill: #000;
+}
+.menu-toggle__icon:active, .menu-toggle__icon:hover, .menu-toggle__icon:focus {
+  fill: #2196F3;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px 48px 40px;
+  background-color: #FFFFFF;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: var(--text-main-color);
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.mobile-menu__link {
+  display: block;
+  text-align: left;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: var(--text-main-color);
+}
+.mobile-menu__link--active-page {
+  color: #2196F3;
+}
+
+.mobile-contact {
+  text-align: left;
+  list-style: none;
+}
+.mobile-contact__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  padding-top: 270px;
+  padding-bottom: 32px;
+}
+.mobile-contact__link-tel {
+  color: #2196F3;
+}
+.mobile-contact__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  padding-bottom: 60px;
+}
+.mobile-contact__link-mail {
+  color: #757575;
+}
+
+.mobile-social {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+}
+.mobile-social__item {
+  padding-right: 6px;
+}
+.mobile-social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+.mobile-social__line {
+  color: rgba(33, 33, 33, 0.2);
+  padding-left: 4px;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
 .describe {
   z-index: 999;
   position: absolute;
@@ -913,17 +1029,24 @@
 }
 
 .footer-information {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  list-style: none;
+  text-decoration: none;
+}
+.footer-information__item {
   text-align: center;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  text-decoration: none;
-  list-style: none;
   padding-bottom: 8px;
 }
 .footer-information__link {
+  text-align: center;
   padding-bottom: 8px;
   color: var(--brand-contact-color);
   transition: var(--transition);
@@ -935,13 +1058,14 @@
 
 /*desktop*/
 @media screen and (min-width: 1200px) {
-  .contact__logo {
+  .information__logo {
     text-align: left;
   }
-  .contact__address {
+  .information__adres {
     text-align: left;
   }
-  .contact .footer-information__item {
+
+  .footer-information__item {
     text-align: left;
   }
 }
@@ -1004,7 +1128,7 @@
     margin-left: 70px;
   }
   .socialmedia__title {
-    text-align: left;
+    text-align: center;
   }
 
   .footer-socialmedia {
@@ -1086,6 +1210,53 @@
   margin-left: 24px;
 }
 
+@media screen and (min-width: 1200px) {
+  .newsletter {
+    width: 570px;
+    text-align: left;
+    margin-top: 8px;
+    margin-left: 78px;
+  }
+  .newsletter__tittle {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--brand-second-color);
+    margin-left: 78px;
+  }
+  .newsletter__bag {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+  }
+  .newsletter__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px;
+    padding-left: 16px;
+    margin-right: 12px;
+    margin-left: 78px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--brand-two-color);
+    color: var(--brand-second-color);
+  }
+  .newsletter__button {
+    align-items: center;
+  }
+  .newsletter__icon {
+    margin-left: 24px;
+  }
+}
 /*.newsletter {
   width: 570px;
   text-align: left;

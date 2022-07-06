@@ -17,18 +17,25 @@
 }
 
 .footer-information {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    list-style: none;
+    text-decoration: none;
+
+&__item{
     text-align: center;
     font-family: "Roboto";
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    text-decoration: none;
-    list-style: none;
-    padding-bottom: 8px;
+    padding-bottom: 8px;}
 
 
 &__link {
+    text-align: center;
     padding-bottom: 8px;
     color: var(--brand-contact-color);
     transition: var(--transition);
@@ -45,24 +52,25 @@
 
 /*desktop*/
 @media screen and (min-width: 1200px) {
-.contact {
-    &__logo {
+.information {
+&__logo {
     text-align: left;
-    }
-
-    &__address {
-    text-align: left;
-    }
-
-.footer-information {
-    &__item {
-        text-align: left;
-    }
-    }
-    }
 }
 
-//mobile//
+&__adres {
+    text-align: left;
+            
+}
+}
+
+.footer-information {
+    &__item{
+    text-align: left;
+    }
+}
+}
+
+//tablet//
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 
 }
