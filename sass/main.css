@@ -1451,7 +1451,7 @@
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .page-header {
+  .studio-header {
     position: fixed;
     width: 100%;
   }
