@@ -1425,7 +1425,7 @@
   border-bottom: 1px solid #eeeeee;
 }
 
-.offer_photo:hover .describe {
+.offer__photo:hover .describe {
   transform: translateY(0);
 }
 
