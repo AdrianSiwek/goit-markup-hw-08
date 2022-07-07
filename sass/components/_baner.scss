@@ -11,9 +11,8 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 480px;
-}
 
-.description__container {
+&__container {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -21,7 +20,7 @@
       min-width: auto;
     }
 
-.description__name{
+&__name{
   font-family: "Roboto";
   font-weight: 900;
   font-size: 26px;
@@ -31,6 +30,7 @@
   letter-spacing: 0.06em;
   color: var(--brand-second-color);
   max-width: 365px;
+}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -56,7 +56,7 @@
       rgba(47, 48, 58, 0.4) 0%,
       rgba(47, 48, 58, 0.4) 100%
     ),
-    url("../image/photobanner.jpg");
+    url("../image/desktop/header_desktop1600x600.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1600px;
@@ -85,4 +85,32 @@ screen and (min-resolution: 2dppx) and (min-width:320px) and (max-width: 767px) 
       url("../image/mobile/header_mobile@2x.jpg");
       background-size: 480px;
   }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+  .description {
+    min-height: 400px;
+    background-image: linear-gradient(0deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%),
+      url("../image/tablet/header_tablet768x400@2x.jpg");
+    background-size: 768px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .description {
+        min-height: 600px;
+        background-image: linear-gradient(
+                0deg,
+                rgba(47, 48, 58, 0.4) 0%,
+                rgba(47, 48, 58, 0.4) 100%
+            ),
+            url("../image/desktop/header_desktop1600x600@2x.jpg");
+        background-size: 1600px;
+    }
 }
