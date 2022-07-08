@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  width: 200px;
+  width: calc(50vw - 30px);
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -50,7 +50,7 @@
     justify-content: space-evenly;
     
     &__item {
-    width: 226px;
+    width: calc(33vw - 30px);
       
 }
 }

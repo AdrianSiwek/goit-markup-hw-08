@@ -25,8 +25,9 @@
 
 //tablet//
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .page-footer {
+  .studio-footer {
     &__container {
+      display: flex;
       align-items: flex-start;
       flex-direction: row;
       flex-wrap: wrap;

@@ -1,7 +1,7 @@
 .menu {
     display: flex;
-    justify-content: center;
-    cursor: pointer;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: center;
     list-style: none;
     margin-bottom: 50px;
@@ -24,6 +24,7 @@
     height: 38px;
     transition: var(--transition);
     transition-property: color, background, box-shadow;
+    margin-top: 15px;
     margin-right: 4px;
     margin-left: 4px;
 
@@ -38,4 +39,36 @@
     cursor: pointer;
 }
 }
+}
+
+//desktop//
+@media screen and (min-width: 1200px) {
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin-bottom: 50px;
+        flex-wrap: no-wrap;
+
+        &__click {
+
+            margin-top: 0;
+        }
+    }
+}
+
+//tablet//
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+//mobile//
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .menu {
+        padding-top: 45px;
+    }
 }

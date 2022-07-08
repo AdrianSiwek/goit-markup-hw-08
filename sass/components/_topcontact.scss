@@ -15,13 +15,9 @@
   transition: var(--transition);
   transition-property: color, fill;
 
-
-&:active,
-&:hover,
-&:focus {
-  fill: #2196f3;
-  color: #2196f3;
-}
+  &:visited {
+      color: var(--text-main-color);
+    }
 
 &--end {
     margin-left: 50px;
@@ -32,11 +28,6 @@
   transition: var(--transition);
   transition-property: fill;
 
-&:active,
-&:hover,
-&:focus {
-  fill: var(--brand-main-color);
-}
 }
 
 &__icon {
@@ -55,11 +46,15 @@
   margin-bottom: -3px;
 }
 }
+}
 
-&:hover .top-contact__icon {
-    fill: var(--brand-main-color);
-}
-}
+.top-contact__link:active,
+.top-contact__link:hover,
+.top-contact__link:focus {
+      fill: var(--brand-mlight-color);
+      color: var(--brand-mlight-color);
+    }
+
 
 @media screen and (min-width: 1200px) {
   //desktop
