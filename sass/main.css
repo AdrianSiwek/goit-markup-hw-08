@@ -565,20 +565,22 @@
   transition: var(--transition);
   transition-property: color, fill;
 }
+.top-contact__link--hover {
+  transition: var(--transition);
+  transition-property: fill, color;
+}
+.top-contact__link--hover .top-contact_icon:active, .top-contact__link--hover .top-contact__icon:hover, .top-contact__link--hover .top-contact__icon:focus {
+  fill: var(--brand-mlight-color);
+  color: var(--brand-mlight-color);
+}
 .top-contact__link:visited {
   color: var(--text-main-color);
 }
 .top-contact__link--end {
   margin-left: 50px;
 }
-.top-contact__object {
-  transition: var(--transition);
-  transition-property: fill;
-}
 .top-contact__icon {
   fill: #afb1b8;
-  transition: var(--transition);
-  transition-property: fill;
 }
 .top-contact__icon--phone {
   margin-right: 6px;
@@ -587,13 +589,6 @@
 .top-contact__icon--mail {
   margin-right: 6px;
   margin-bottom: -3px;
-}
-
-.top-contact__link:active,
-.top-contact__link:hover,
-.top-contact__link:focus {
-  fill: var(--brand-mlight-color);
-  color: var(--brand-mlight-color);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -970,16 +965,14 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.client__item {
+  transition: var(--transition);
   transition-property: fill, border-color;
 }
 .client__item:active, .client__item:hover, .client__item:focus {
   fill: #2196f3;
   border-color: #2196f3;
-}
-.client__icon {
-  transition: var(--transition);
-  transition-property: fill;
 }
 
 @media screen and (min-width: 1200px) {

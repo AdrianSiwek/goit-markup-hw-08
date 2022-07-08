@@ -8,12 +8,23 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-
-&__link {
+& .top-contact__link {
   color: var(--brand-contact-color);
-  text-decoration: none;
-  transition: var(--transition);
-  transition-property: color, fill;
+  text-decoration: none;}
+
+
+  .top-contact__link {
+      transition: var(--transition);
+      transition-property: fill,color;
+
+  &:active,
+  &:hover,
+  &:focus{
+        fill: var(--brand-mlight-color);
+        color: var(--brand-mlight-color);
+    }
+  }
+  }
 
   &:visited {
       color: var(--text-main-color);
@@ -22,19 +33,10 @@
 &--end {
     margin-left: 50px;
 }
-}
 
-&__object {
-  transition: var(--transition);
-  transition-property: fill;
-
-}
 
 &__icon {
   fill: #afb1b8;
-  transition: var(--transition);
-  transition-property: fill;
-
 
 &--phone {
   margin-right: 6px;
@@ -46,14 +48,7 @@
   margin-bottom: -3px;
 }
 }
-}
 
-.top-contact__link:active,
-.top-contact__link:hover,
-.top-contact__link:focus {
-      fill: var(--brand-mlight-color);
-      color: var(--brand-mlight-color);
-    }
 
 
 @media screen and (min-width: 1200px) {
