@@ -1,3 +1,8 @@
+.top-contact__link--hover:hover .top-contact__icon {
+      fill: var(--brand-mlight-color);
+          color: var(--brand-mlight-color);
+}
+
 .top-contact {
   display: flex;
   list-style: none;
@@ -8,18 +13,24 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-& .top-contact__link {
+&__link {
   color: var(--brand-contact-color);
-  text-decoration: none;}
+  text-decoration: none;
+  transition: var(--transition);
+  transition-property: color, fill;
 
-
-  .top-contact__link {
+  &--hover {
       transition: var(--transition);
       transition-property: fill,color;
 
-  &:active,
-  &:hover,
-  &:focus{
+      &:hover {
+          fill: var(--brand-mlight-color);
+          color: var(--brand-mlight-color);
+        }
+
+ &--hover.top-contact_icon:active,
+&--hover:hover,
+ &--hover:focus{
         fill: var(--brand-mlight-color);
         color: var(--brand-mlight-color);
     }
@@ -46,6 +57,7 @@
 &--mail {
   margin-right: 6px;
   margin-bottom: -3px;
+}
 }
 }
 
