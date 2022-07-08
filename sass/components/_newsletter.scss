@@ -46,7 +46,6 @@
 
 @media screen and (min-width: 1200px) {
 .newsletter {
-  width: 570px;
   text-align: left;
   margin-top: 8px;
   margin-left: 78px;
@@ -55,6 +54,7 @@
   &__tittle {
     margin: 0;
     padding: 0;
+    margin-left: 78px;
   }
 
   &__bag {
@@ -79,6 +79,6 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .newsletter {
     margin-top: 60px;
-    width: 450px;
+    width: calc(100vw - 30px);
   }
 }

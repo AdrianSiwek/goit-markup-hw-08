@@ -13,8 +13,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
-    <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body class="studio">
     <header class="studio-header">
@@ -49,9 +47,8 @@
         </nav>
         <ul class="top-contact">
           <li class="top-contact__object">
-            <a class="top-contact__link" href="mailto:info@example.com">
-              <svg
-                class="top-contact__icon top-contact__icon--mail"
+            <a class="top-contact__link top-contact__link--hover" href="mailto:info@example.com">
+              <svg class="top-contact__icon top-contact__icon--mail"
                 width="16"
                 height="12"
               >
@@ -61,11 +58,8 @@
             >
           </li>
           <li class="top-contact__object">
-            <a
-              class="top-contact__link top-contact__link--end"
-              href="tel:+48111111111"
-              ><svg
-                class="top-contact__icon top-contact__icon--phone"
+            <a class="top-contact__link top-contact__link--end top-contact__link--hover" href="tel:+48111111111"
+              ><svg class="top-contact__icon top-contact__icon--phone"
                 width="10"
                 height="16"
               >
@@ -92,19 +86,20 @@
           <li class="offer__photo">
             <figure>
               <img
-                    class="product__image"
-                    src="image/mobile/nba450x294.jpg"
+                    src="./image/mobile/laptop450x294.jpg"
                     srcset="
-                      image/mobile/nba450x294.jpg   450w,
-                      images/mobile/nba450x294@2x.jpg   900w,
-                      image/tablet/nba354x294.jpg   354w,
-                      image/tablet/nba354x294@2x.jpg    708w,
-                      image/desktop/nba370x294.jpg 370w,
-                      image/desktop/nba370x294@2x.jpg 740w
+                      ./image/mobile/laptop450x294.jpg   450w,
+                      ./image/mobile/laptop450x294@2x.jpg   900w,
+                      ./image/tablet/laptop354x294.jpg   354w,
+                      ./image/tablet/laptop354x294@2x.jpg    708w,
+                      ./image/desktop/laptop370x294.jpg 370w,
+                      ./image/desktop/laptop370x294@2x.jpg 740w
                     "
-                    alt="nba ze stroną internetową na ekranie."
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
-                  />
+                    alt="laptop ze stroną internetową na ekranie."
+                    sizes="
+                        (min-width: 1200px) 370px,
+                        (min-width: 768px) calc(50vw - 30px),
+                        (min-width: 320px) calc(100vw - 30px)">
               <div class="describe">
                 <p class="describe__label">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -122,19 +117,20 @@
           <li class="offer__photo">
             <figure>
               <img
-                    class="product__image"
                     src="image/mobile/nba450x294.jpg"
                     srcset="
-                      image/mobile/nba450x294.jpg   450w,
-                      images/mobile/nba450x294@2x.jpg   900w,
-                      image/tablet/nba354x294.jpg   354w,
-                      image/tablet/nba354x294@2x.jpg    708w,
-                      image/desktop/nba370x294.jpg 370w,
-                      image/desktop/nba370x294@2x.jpg 740w
+                      ./image/mobile/nba450x294.jpg 450w,
+                      ./image/mobile/nba450x294@2x.jpg 900w,
+                      ./image/tablet/nba354x294.jpg 354w,
+                      ./image/tablet/nba354x294@2x.jpg 708w,
+                      ./image/desktop/nba370x294.jpg 370w,
+                      ./image/desktop/nba370x294@2x.jpg 740w
                     "
                     alt="koszykarze."
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
-                  />
+                    sizes="
+                        (min-width: 1200px) 370px,
+                        (min-width: 768px) calc(50vw - 30px),
+                        (min-width: 320px) calc(100vw - 30px)">
               <div class="describe">
                 <p class="describe__label">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -151,19 +147,20 @@
           </li>
           <li class="offer__photo">
             <img
-                    class="product__image"
-                    src="image/mobile/seafood450x294.jpg"
+                    src="./image/mobile/seafood450x294.jpg"
                     srcset="
-                      image/mobile/seafood450x294.jpg   450w,
-                      images/mobile/seafood450x294@2x.jpg   900w,
-                      image/tablet/seafood354x294.jpg   354w,
-                      image/tablet/seafood354x294@2x.jpg    708w,
-                      image/desktop/seafood370x294.jpg 370w,
-                      image/desktop/seafood370x294@2x.jpg 740w
+                      ./image/mobile/seafood450x294.jpg   450w,
+                      ./image/mobile/seafood450x294@2x.jpg   900w,
+                      ./image/tablet/seafood354x294.jpg   354w,
+                      ./image/tablet/seafood354x294@2x.jpg    708w,
+                      ./image/desktop/seafood370x294.jpg 370w,
+                      ./image/desktop/seafood370x294@2x.jpg 740w
                     "
                     alt="Logo restauracji."
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
-                  />
+                    sizes="
+                        (min-width: 1200px) 370px,
+                        (min-width: 768px) calc(50vw - 30px),
+                        (min-width: 320px) calc(100vw - 30px)">
               <div class="describe">
                 <p class="describe__label">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -181,19 +178,20 @@
           <li class="offer__photo">
             <figure>
               <img
-                    class="product__image"
-                    src="image/mobile/headphones450x294.jpg"
+                    src="./image/mobile/headphones450x294.jpg"
                     srcset="
-                      image/mobile/headphones450x294.jpg   450w,
-                      images/mobile/headphones450x294@2x.jpg   900w,
-                      image/tablet/headphones354x294.jpg   354w,
-                      image/tablet/headphones354x294@2x.jpg    708w,
-                      image/desktop/headphones370x294.jpg 370w,
-                      image/desktop/headphones370x294@2x.jpg 740w
+                      ./image/mobile/headphones450x294.jpg   450w,
+                      ./image/mobile/headphones450x294@2x.jpg   900w,
+                      ./image/tablet/headphones354x294.jpg   354w,
+                      ./image/tablet/headphones354x294@2x.jpg    708w,
+                      ./image/desktop/headphones370x294.jpg 370w,
+                      ./image/desktop/headphones370x294@2x.jpg 740w
                     "
                     alt="słuchawki."
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
-                  />
+                    sizes="
+                        (min-width: 1200px) 370px,
+                        (min-width: 768px) calc(50vw - 30px),
+                        (min-width: 320px) calc(100vw - 30px)">
               <div class="describe">
                 <p class="describe__label">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -210,19 +208,20 @@
           </li>
           <li class="offer__photo">
             <img
-                    class="product__image"
                     src="image/mobile/boxes450x294.jpg"
                     srcset="
-                      image/mobile/boxes450x294.jpg   450w,
-                      images/mobile/boxes450x294@2x.jpg   900w,
-                      image/tablet/box354x294.jpg   354w,
-                      image/tablet/box354x294@2x.jpg    708w,
-                      image/desktop/box370x294.jpg 370w,
-                      image/desktop/box370x294@2x.jpg 740w
+                      ./image/mobile/boxes450x294.jpg   450w,
+                      ./image/mobile/boxes450x294@2x.jpg   900w,
+                      ./image/tablet/box354x294.jpg   354w,
+                      ./image/tablet/box354x294@2x.jpg    708w,
+                      ./image/desktop/box370x294.jpg 370w,
+                      ./image/desktop/box370x294@2x.jpg 740w
                     "
                     alt="pudełka."
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
-                  />
+                    sizes="
+                        (min-width: 1200px) 370px,
+                        (min-width: 768px) calc(50vw - 30px),
+                        (min-width: 320px) calc(100vw - 30px)">
               <div class="describe">
                 <p class="describe__label">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -240,12 +239,20 @@
           <li class="offer__photo">
             <figure>
               <img
-                class="offer__img"
-                src="./image/computermonitor.jpg"
-                alt="monitor"
-                width="370"
-                height="294"
-              />
+                    src="./image/mobile/computermonitor450x294.jpg"
+                    srcset="
+                      ./image/mobile/computermonitor450x294.jpg   450w,
+                      ./image/mobile/computermonitor450x294@2x.jpg   900w,
+                      ./image/tablet/computermonitor354x294.jpg   354w,
+                      ./image/tablet/computermonitor354x294@2x.jpg    708w,
+                      ./image/desktop/computermonitor370x294.jpg 370w,
+                      ./image/desktop/computermonitor370x294@2x.jpg 740w
+                    "
+                    alt="pudełka."
+                    sizes="
+                        (min-width: 1200px) 370px,
+                        (min-width: 768px) calc(50vw - 30px),
+                        (min-width: 320px) calc(100vw - 30px)">
               <div class="describe">
                 <p class="describe__label">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -263,12 +270,20 @@
           <li class="offer__photo">
             <figure>
               <img
-                class="offer__img"
-                src="./image/book.jpg"
-                alt="ksiązka"
-                width="370"
-                height="294"
-              />
+                    src="image/mobile/book450x294.jpg"
+                    srcset="
+                      ./image/mobile/book450x294.jpg 450w,
+                      ./image/mobile/book450x294@2x.jpg 900w,
+                      ./image/tablet/book354x294.jpg 354w,
+                      ./image/tablet/book354x294@2x.jpg 708w,
+                      ./image/desktop/book370x294.jpg 370w,
+                      ./image/desktop/book370x294@2x.jpg 740w
+                    "
+                    alt="ksiązka."
+                    sizes="
+                        (min-width: 1200px) 370px,
+                        (min-width: 768px) calc(50vw - 30px),
+                        (min-width: 320px) calc(100vw - 30px)">
               <div class="describe">
                 <p class="describe__label">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -286,12 +301,20 @@
           <li class="offer__photo">
             <figure>
               <img
-                class="offer__img"
-                src="./image/letters.jpg"
-                alt="zawieszka z literami"
-                width="370"
-                height="294"
-              />
+                    src="./image/mobile/label450x294.jpg"
+                    srcset="
+                      ./image/mobile/label450x294.jpg   450w,
+                      ./image/mobile/label450x294@2x.jpg   900w,
+                      ./image/tablet/label354x294.jpg   354w,
+                      ./image/tablet/label354x294@2x.jpg    708w,
+                      ./image/desktop/label370x294.jpg 370w,
+                      ./image/desktop/label370x294@2x.jpg 740w
+                    "
+                    alt="zawieszka z literami."
+                    sizes="
+                        (min-width: 1200px) 370px,
+                        (min-width: 768px) calc(50vw - 30px),
+                        (min-width: 320px) calc(100vw - 30px)">
               <div class="describe">
                 <p class="describe__label">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -309,12 +332,20 @@
           <li class="offer__photo">
             <figure class="photo">
               <img
-                class="offer__img"
-                src="./image/growingbuisness.jpg"
-                alt="nba z otwartą stroną internetową"
-                width="370"
-                height="294"
-              />
+                    src="./image/mobile/growingbuisness450x294.jpg"
+                    srcset="
+                      ./image/mobile/growingbuisness450x294.jpg 450w,
+                      ./image/mobile/growingbuisness450x294@2x.jpg 900w,
+                      ./image/tablet/growingbuisness354x294.jpg 354w,
+                      ./image/tablet/growingbuisness354x294@2x.jpg 708w,
+                      ./image/desktop/growingbuisness370x294.jpg 370w,
+                      ./image/desktop/growingbuisness370x294@2x.jpg 740w
+                    "
+                    alt="laptop z logiem na ekranie."
+                    sizes="
+                        (min-width: 1200px) 370px,
+                        (min-width: 768px) calc(50vw - 30px),
+                        (min-width: 320px) calc(100vw - 30px)">
               <div class="describe">
                 <p class="describe__label">
                   Technocrack jest popularną platformą wykorzystywaną do

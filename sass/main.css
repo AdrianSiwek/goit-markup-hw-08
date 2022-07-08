@@ -26,6 +26,10 @@
   text-align: center;
 }
 
+img {
+  max-width: 100%;
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -86,33 +90,12 @@
   }
 }
 .container {
-  width: 100%;
+  min-width: 320px;
+  max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 450px) and (max-width: 767px) {
-  .container {
-    width: 450px;
-  }
-}
-/*
-.container{
-    width: 1200px;
-    padding: 0 15px;
-    align-items: center;
-    margin: 0 auto;
-}
-*/
 .policy {
   margin-top: 20px;
   display: flex;
@@ -549,11 +532,6 @@
     overflow: hidden;
   }
 }
-.top-contact__link--hover:hover .top-contact__icon {
-  fill: var(--brand-mlight-color);
-  color: var(--brand-mlight-color);
-}
-
 .top-contact {
   display: flex;
   list-style: none;
@@ -570,6 +548,9 @@
   transition: var(--transition);
   transition-property: color, fill;
 }
+.top-contact__link--end {
+  margin-left: 30px;
+}
 .top-contact__link--hover {
   transition: var(--transition);
   transition-property: fill, color;
@@ -585,9 +566,6 @@
 .top-contact:visited {
   color: var(--text-main-color);
 }
-.top-contact--end {
-  margin-left: 50px;
-}
 .top-contact__icon {
   fill: #afb1b8;
 }
@@ -598,6 +576,11 @@
 .top-contact__icon--mail {
   margin-right: 6px;
   margin-bottom: -3px;
+}
+
+.top-contact__link--hover:hover .top-contact__icon {
+  fill: var(--brand-mlight-color);
+  color: var(--brand-mlight-color);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1180,7 +1163,6 @@
 
 @media screen and (min-width: 1200px) {
   .newsletter {
-    width: 570px;
     text-align: left;
     margin-top: 8px;
     margin-left: 78px;
@@ -1188,6 +1170,7 @@
   .newsletter__tittle {
     margin: 0;
     padding: 0;
+    margin-left: 78px;
   }
   .newsletter__bag {
     display: inline-flex;
@@ -1207,7 +1190,7 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .newsletter {
     margin-top: 60px;
-    width: 450px;
+    width: calc(100vw - 30px);
   }
 }
 .menu {
