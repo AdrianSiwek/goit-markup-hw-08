@@ -911,7 +911,7 @@ img {
   .team {
     flex-direction: row;
   }
-  .team__item {
+  .team__component {
     width: calc(50vw - 30px);
     margin-left: 15px;
     margin-right: 15px;
@@ -1118,6 +1118,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .socialmedia {
     width: calc(50vw - 30px);
+    margin-top: 0;
   }
 }
 .newsletter {
@@ -1284,7 +1285,7 @@ img {
   z-index: 1;
   position: relative;
   margin-bottom: 30px;
-  max-width: 370px;
+  width: calc(100vw - 30px);
   height: 404px;
   list-style-type: none;
   flex-basis: 390px;
@@ -1318,6 +1319,15 @@ img {
   transform: translateY(0);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio {
+    justify-content: flex-start;
+  }
+  .portfolio__item {
+    width: calc(50vw - 30px);
+    margin: 15px;
+  }
+}
 .studio-header {
   height: 60px;
   display: flex;
