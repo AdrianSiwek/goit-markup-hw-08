@@ -1339,10 +1339,10 @@ img {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .portfolio {
+  .offer {
     justify-content: flex-start;
   }
-  .portfolio__item {
+  .offer__photo {
     width: calc(50vw - 30px);
     margin: 15px;
   }
