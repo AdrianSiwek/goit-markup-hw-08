@@ -44,41 +44,6 @@
   }
 }
 }
-  .team__icone {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      padding-top: 16px;
-      margin-right: 10px;}
-  
-    .team__icone--style {
-      display: flex;
-      justify-content: center;
-      padding-right: 10px;
-      }
-  
-    .team__icone--elipse {
-      display: flex;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background-color: transparent;
-      justify-content: center;
-      align-items: center;
-      fill: var(--icon-color);
-      transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-      transition-property: fill, background-color;
-      }
-  
-.team__icone--elipse:active,
-.team__icone--elipse:hover,
-.team__icone--elipse:focus {
-      fill: var(--brand-second-color);
-      border-radius: 50%;
-      background-color: #2196f3;
-    }
-
-
 
 //tablet//
 @media screen and (min-width: 768px) and (max-width: 1199px) {

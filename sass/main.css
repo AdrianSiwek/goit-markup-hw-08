@@ -487,6 +487,28 @@ img {
   justify-content: center;
   align-items: center;
 }
+.icone__team {
+  display: flex;
+  justify-content: center;
+  padding-right: 10px;
+}
+.icone__team--color {
+  background-color: transparent;
+  fill: var(--icon-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition-property: fill, background-color;
+}
+.icone__team--color:active, .icone__team--color:hover, .icone__team--color:focus {
+  fill: var(--brand-second-color);
+  border-radius: 50%;
+  background-color: #2196f3;
+}
+.icone__socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
 .icone-socialmedia--color {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--brand-second-color);
@@ -499,6 +521,13 @@ img {
   border-radius: 50%;
   background-color: #2196f3;
   cursor: pointer;
+}
+
+.team__icone {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-top: 16px;
 }
 
 .describe {
@@ -548,13 +577,13 @@ img {
 .logo__link:active, .logo__link:hover, .logo__link:focus {
   color: var(--brand-mlight-color);
 }
-.logo--first-color {
+.logo__span--first-color {
   color: var(--brand-mlight-color);
 }
-.logo--two-color {
+.logo__span--two-color {
   color: var(--text-main-color);
 }
-.logo--three-color {
+.logo__span--three-color {
   color: var(--brand-second-color);
 }
 
@@ -800,7 +829,7 @@ img {
   padding: 25px 100px 25px 100px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  list-style-type: none;
+  list-style: none;
 }
 .elaboration__item {
   max-width: 100%;
@@ -834,23 +863,14 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .elaboration {
-    display: flex;
     margin: 0 -15px;
     list-style: none;
-    flex-wrap: wrap;
   }
   .elaboration__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 30px;
     width: 270px;
-    height: 120px;
-    background-color: #f5f4fa;
-    border-radius: 4px;
-    list-style-type: none;
   }
   .elaboration__item {
     max-width: 270px;
@@ -947,41 +967,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--brand-contact-color);
-}
-
-.team__icone {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding-top: 16px;
-  margin-right: 10px;
-}
-
-.team__icone--style {
-  display: flex;
-  justify-content: center;
-  padding-right: 10px;
-}
-
-.team__icone--elipse {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: transparent;
-  justify-content: center;
-  align-items: center;
-  fill: var(--icon-color);
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  transition-property: fill, background-color;
-}
-
-.team__icone--elipse:active,
-.team__icone--elipse:hover,
-.team__icone--elipse:focus {
-  fill: var(--brand-second-color);
-  border-radius: 50%;
-  background-color: #2196f3;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1151,12 +1136,6 @@ img {
   justify-content: space-between;
   text-align: left;
 }
-.footer-socialmedia__light {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 10px;
-}
 
 @media screen and (min-width: 1200px) {
   .socialmedia {
@@ -1325,28 +1304,6 @@ img {
   list-style: none;
   margin: 0 -15px;
 }
-.offer__name {
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 4px;
-  text-align: left;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.offer__title {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  text-align: left;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.03em;
-  color: var(--brand-contact-color);
-}
 .offer__photo {
   object-fit: cover;
   position: relative;
@@ -1377,6 +1334,28 @@ img {
   position: relative;
   margin-top: -6px;
   list-style: none;
+}
+.offer-discription__name {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 4px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.offer-discription__title {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--brand-contact-color);
 }
 
 .offer__photo:hover .describe {
