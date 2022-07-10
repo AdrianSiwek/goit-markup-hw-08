@@ -31,12 +31,13 @@
 
 
 &__photo {
+  object-fit: cover;
   position: relative;
   margin: 15px 0 15px 0;
   width: calc(100vw - 30px);
   height: 404px;
   list-style-type: none;
-  border: 0px;
+  border: 1px solid #eee;
   overflow: hidden;
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -64,9 +65,6 @@
   position: absolute;
   margin-top: -6px;
   list-style: none;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
 }
 
@@ -106,6 +104,10 @@
     &__photo {
       width: calc(50vw - 30px);
       margin: 15px;
+    }
+
+    &-discription{
+      width: calc(50vw - 30px);
     }
   }
 }
