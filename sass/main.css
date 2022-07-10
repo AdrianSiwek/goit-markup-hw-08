@@ -264,6 +264,46 @@ img {
   color: #9e9e9e;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-input {
+    width: 370px;
+  }
+  .form-label__icon--name {
+    position: absolute;
+    left: 12px;
+    top: 85px;
+  }
+  .form-label__icon--phone {
+    position: absolute;
+    left: 12px;
+    top: 155px;
+  }
+  .form-label__icon--email {
+    position: absolute;
+    left: 12px;
+    top: 220px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .form-input {
+    width: 370px;
+  }
+  .form-label__icon--name {
+    position: absolute;
+    left: 12px;
+    top: 85px;
+  }
+  .form-label__icon--phone {
+    position: absolute;
+    left: 12px;
+    top: 155px;
+  }
+  .form-label__icon--email {
+    position: absolute;
+    left: 12px;
+    top: 220px;
+  }
+}
 .backdrop {
   position: fixed;
   left: 0;
@@ -439,6 +479,15 @@ img {
     display: none;
   }
 }
+.icone {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
 .describe {
   z-index: 999;
   position: absolute;
@@ -1094,21 +1143,17 @@ img {
   align-items: center;
   padding-right: 10px;
 }
-.footer-socialmedia__icone {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
+
+.icone-socialmedia--color {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--brand-second-color);
 }
-.footer-socialmedia__icone {
+
+.icone-socialmedia--hover {
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition-property: fill, background-color;
 }
-.footer-socialmedia__icone:active, .footer-socialmedia__icone:hover, .footer-socialmedia__icone:focus {
+.icone-socialmedia--hover:active, .icone-socialmedia--hover:hover, .icone-socialmedia--hover:focus {
   border-radius: 50%;
   background-color: #2196f3;
   cursor: pointer;
