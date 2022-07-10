@@ -35,7 +35,6 @@
   position: relative;
   margin: 15px 0 15px 0;
   width: calc(100vw - 30px);
-  height: 404px;
   list-style-type: none;
   border: 1px solid #eee;
   overflow: hidden;
@@ -52,8 +51,10 @@
 }
 
 &__img {
-  height: 294px;
+  position: relative;
   object-fit: cover;
+  display: inline-block;
+  max-width: 100%;
 }
 
 &-discription {
@@ -62,7 +63,7 @@
   left: 0;
   bottom: 0;
   background-color: #ffffff;
-  position: absolute;
+  position: relative;
   margin-top: -6px;
   list-style: none;
 }
