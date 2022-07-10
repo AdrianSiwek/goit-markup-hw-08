@@ -198,7 +198,7 @@ img {
 .form-label__icon--phone {
   position: absolute;
   left: 12px;
-  top: 133px;
+  top: 135px;
 }
 .form-label__icon--email {
   position: absolute;
@@ -486,6 +486,19 @@ img {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+}
+.icone-socialmedia--color {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--brand-second-color);
+}
+.icone-socialmedia--hover {
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition-property: fill, background-color;
+}
+.icone-socialmedia--hover:active, .icone-socialmedia--hover:hover, .icone-socialmedia--hover:focus {
+  border-radius: 50%;
+  background-color: #2196f3;
+  cursor: pointer;
 }
 
 .describe {
@@ -1099,6 +1112,7 @@ img {
   }
   .information__adres {
     text-align: left;
+    width: 246px;
   }
 
   .footer-information__item {
@@ -1144,21 +1158,6 @@ img {
   padding-right: 10px;
 }
 
-.icone-socialmedia--color {
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--brand-second-color);
-}
-
-.icone-socialmedia--hover {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  transition-property: fill, background-color;
-}
-.icone-socialmedia--hover:active, .icone-socialmedia--hover:hover, .icone-socialmedia--hover:focus {
-  border-radius: 50%;
-  background-color: #2196f3;
-  cursor: pointer;
-}
-
 @media screen and (min-width: 1200px) {
   .socialmedia {
     margin-top: 12px;
@@ -1202,7 +1201,7 @@ img {
   margin-top: 20px;
 }
 .newsletter__input {
-  width: 100%;
+  width: 450px;
   height: 50px;
   padding: 15px;
   padding-left: 16px;
@@ -1251,6 +1250,11 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .newsletter {
     width: calc(100vw - 30px);
+  }
+  .newsletter__bag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .menu {
