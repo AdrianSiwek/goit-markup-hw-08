@@ -4,7 +4,7 @@
   list-style: none;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 -15px;
+  margin: -15px;
 
 
   &__component {
@@ -15,7 +15,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-bottom: 30px;
+      padding-bottom: 30px;
+      padding: 0 15px;
       width: calc(100vw - 30px);
       background-color: var(--brand-second-color);
   

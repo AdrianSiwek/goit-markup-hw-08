@@ -10,12 +10,12 @@
   list-style: none;
   margin-right: 15px;
   position: relative;
-  width: 370px;
+  max-width: 100%;
   min-height: 294px;
 }
 
 &__discription {
-  width: 370px;
+  max-width: 100%;
   height: 70px;
   background-image: linear-gradient(
     0deg,
