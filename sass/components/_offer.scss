@@ -77,19 +77,8 @@
   .offer {
       &__photo {
           width: 370px;
-          margin: 15px;
-      }
-      &:nth-child(3n + 1) {
-          margin-left: 0;
-      }
-      &:nth-child(3n + 3) {
-          margin-right: 0;
-      }
-      &:nth-child(n + 7) {
-          margin-bottom: 0;
-      }
-      &:nth-child(-n + 3) {
-          margin-top: 0;
+          margin-right: 15px;
+          margin-left: 15px;
       }
   }
 }
