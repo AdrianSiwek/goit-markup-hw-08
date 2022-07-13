@@ -889,6 +889,7 @@ img {
   justify-content: center;
   display: flex;
   padding-bottom: 94px;
+  margin: 0 -15px;
 }
 .segregate__photography {
   margin-left: 15px;
@@ -934,7 +935,6 @@ img {
   list-style: none;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 -15px;
 }
 .team__component {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -943,8 +943,8 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
-  width: calc(100vw - 30px);
+  margin-top: 15px;
+  margin-bottom: 15px;
   background-color: var(--brand-second-color);
 }
 .team__component__names {
@@ -972,12 +972,12 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team {
+    margin: -15px -15px;
     flex-direction: row;
   }
   .team__component {
     width: calc(50% - 30px);
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 15px 15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -986,13 +986,14 @@ img {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    margin: -15px -15px;
   }
   .team__component {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin: 0 15px;
     padding-bottom: 30px;
-    max-width: 270px;
+    width: 270px;
     background-color: var(--brand-second-color);
   }
   .team__component:first-child {
