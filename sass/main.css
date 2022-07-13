@@ -94,7 +94,8 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  padding: 0 15px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .policy {
@@ -529,6 +530,7 @@ img {
   justify-content: center;
   list-style: none;
   padding-top: 16px;
+  padding-bottom: 24px;
 }
 
 .describe {
@@ -868,8 +870,6 @@ img {
     list-style: none;
   }
   .elaboration__icon {
-    margin-left: 15px;
-    margin-right: 15px;
     margin-bottom: 30px;
     width: 270px;
   }
