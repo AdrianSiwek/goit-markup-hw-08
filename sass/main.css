@@ -975,7 +975,7 @@ img {
     flex-direction: row;
   }
   .team__component {
-    width: calc(50vw - 30px);
+    width: calc(50% - 30px);
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -992,7 +992,7 @@ img {
     border-radius: 0px 0px 4px 4px;
     margin: 0 15px;
     padding-bottom: 30px;
-    width: 270px;
+    max-width: 270px;
     background-color: var(--brand-second-color);
   }
   .team__component:first-child {
