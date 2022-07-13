@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
 
 &__click {
@@ -68,6 +68,6 @@
 //mobile//
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .menu {
-        padding-top: 45px;
+        padding-top: 60px;
     }
 }
