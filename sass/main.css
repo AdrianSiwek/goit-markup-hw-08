@@ -530,7 +530,6 @@ img {
   justify-content: center;
   list-style: none;
   padding-top: 16px;
-  padding-bottom: 24px;
 }
 
 .describe {
@@ -945,6 +944,7 @@ img {
   align-items: center;
   margin-top: 15px;
   margin-bottom: 15px;
+  padding-bottom: 24px;
   background-color: var(--brand-second-color);
 }
 .team__component__names {
