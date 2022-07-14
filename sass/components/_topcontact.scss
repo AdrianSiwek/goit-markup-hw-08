@@ -80,34 +80,3 @@
     overflow: hidden;
   }
 }
-
-
-/*
-  &--hover {
-      transition: var(--transition);
-      transition-property: fill,color;
-
-      &:hover {
-          fill: var(--brand-mlight-color);
-          color: var(--brand-mlight-color);
-        }
-
- &--hover.top-contact_icon:active,
- &--hover:hover,
- &--hover:focus{
-        fill: var(--brand-mlight-color);
-        color: var(--brand-mlight-color);
-    }
-  }
-  }
-
-  &:visited {
-      color: var(--text-main-color);
-    }
-
-
-    .top-contact__link--hover:hover .top-contact__icon {
-      fill: var(--brand-mlight-color);
-          color: var(--brand-mlight-color);
-}
-*/
