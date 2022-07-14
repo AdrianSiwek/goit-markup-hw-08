@@ -1035,12 +1035,12 @@ img {
   fill: #afb1b8;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: border-color, fill;
+  transition-property: border-color;
 }
-.client__item {
+.client__icon {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: border-color, fill;
+  transition-property: fill;
 }
 .client__link {
   display: flex;
@@ -1048,11 +1048,6 @@ img {
 .client__item:active, .client__item:hover, .client__item:focus {
   fill: var(--brand-mlight-color);
   border-color: var(--brand-mlight-color);
-}
-.client__icon {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: border-color, fill;
 }
 
 @media screen and (min-width: 1200px) {
