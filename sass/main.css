@@ -671,44 +671,38 @@ img {
   letter-spacing: 0.02em;
 }
 .top-contact__link {
-  color: var(--brand-contact-color);
   text-decoration: none;
   transition: var(--transition);
   transition-property: color, fill;
 }
+.top-contact__link--hover {
+  fill: #afb1b8;
+  color: var(--brand-contact-color);
+}
+.top-contact__link--hover {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+}
+.top-contact__link--hover:active, .top-contact__link--hover:hover, .top-contact__link--hover:focus {
+  fill: var(--brand-mlight-color);
+  color: var(--brand-mlight-color);
+}
 .top-contact__link--end {
   margin-left: 30px;
 }
-.top-contact__link--hover {
-  transition: var(--transition);
-  transition-property: fill, color;
+.top-contact__link__icon {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, fill;
 }
-.top-contact__link--hover:hover {
-  fill: var(--brand-mlight-color);
-  color: var(--brand-mlight-color);
-}
-.top-contact__link--hover--hover.top-contact_icon:active, .top-contact__link--hover--hover:hover, .top-contact__link--hover--hover:focus {
-  fill: var(--brand-mlight-color);
-  color: var(--brand-mlight-color);
-}
-.top-contact:visited {
-  color: var(--text-main-color);
-}
-.top-contact__icon {
-  fill: #afb1b8;
-}
-.top-contact__icon--phone {
+.top-contact__link__icon--phone {
   margin-right: 6px;
   margin-bottom: -1px;
 }
-.top-contact__icon--mail {
+.top-contact__link__icon--mail {
   margin-right: 6px;
   margin-bottom: -3px;
-}
-
-.top-contact__link--hover:hover .top-contact__icon {
-  fill: var(--brand-mlight-color);
-  color: var(--brand-mlight-color);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -731,6 +725,35 @@ img {
     overflow: hidden;
   }
 }
+/*
+  &--hover {
+      transition: var(--transition);
+      transition-property: fill,color;
+
+      &:hover {
+          fill: var(--brand-mlight-color);
+          color: var(--brand-mlight-color);
+        }
+
+ &--hover.top-contact_icon:active,
+ &--hover:hover,
+ &--hover:focus{
+        fill: var(--brand-mlight-color);
+        color: var(--brand-mlight-color);
+    }
+  }
+  }
+
+  &:visited {
+      color: var(--text-main-color);
+    }
+
+
+    .top-contact__link--hover:hover .top-contact__icon {
+      fill: var(--brand-mlight-color);
+          color: var(--brand-mlight-color);
+}
+*/
 .description {
   display: flex;
   min-height: 400px;
