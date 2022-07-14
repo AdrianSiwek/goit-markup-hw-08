@@ -3,8 +3,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 450px;
-  min-height: 609px;
+  width: 450px;
+  height: 609px;
   background-color: #ffffff;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition-property: transform;
@@ -27,8 +27,8 @@
 @media screen and (min-width: 1200px) {
   //desktop
   .modal {
-      max-width: 528px;
-      min-height: 581px;
+    width: 528px;
+    height: 581px;
       &__head {
           max-width: 446px;
           line-height: 30px;
@@ -39,5 +39,12 @@
   // tablet
   .modal {
       max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  // mobilie
+  .modal{
+    width: 100%;
   }
 }

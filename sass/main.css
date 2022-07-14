@@ -111,8 +111,8 @@ img {
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: #757575;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   transition: var(--transition);
   transition-property: text-decoration, color;
 }
@@ -129,8 +129,8 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -170,6 +170,20 @@ img {
   overflow: hidden;
 }
 
+@media screen and (min-width: 1200px) {
+  .policy__link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .modal-form__policy--text {
+    cursor: pointer;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 .form {
   text-align: left;
   margin-left: 40px;
@@ -288,7 +302,7 @@ img {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .form-input {
-    width: 370px;
+    width: 100%;
   }
   .form-label__icon--name {
     position: absolute;
@@ -331,8 +345,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 450px;
-  min-height: 609px;
+  width: 450px;
+  height: 609px;
   background-color: #ffffff;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition-property: transform;
@@ -352,8 +366,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    max-width: 528px;
-    min-height: 581px;
+    width: 528px;
+    height: 581px;
   }
   .modal__head {
     max-width: 446px;
@@ -363,6 +377,11 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .modal {
     max-width: 450px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .modal {
+    width: 100%;
   }
 }
 .menu-toggle {
@@ -549,6 +568,7 @@ img {
   text-align: left;
   padding-top: 49px;
   padding-left: 24px;
+  padding-bottom: 49px;
   padding-right: 45px;
   font-family: "Roboto";
   font-style: normal;

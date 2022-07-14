@@ -11,8 +11,8 @@
         letter-spacing: 0.03em;
         text-decoration-line: underline;
         color: #757575;
-        font-size: 14px;
-        line-height: 1.71;
+        font-size: 12px;
+        line-height: 1.17;
         transition: var(--transition);
         transition-property: text-decoration, color;
 
@@ -34,8 +34,8 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #757575;
 
@@ -77,4 +77,17 @@
     overflow: hidden;
 }
 
-
+@media screen and (min-width: 1200px) {
+    .policy__link{
+        font-size: 14px;
+        line-height: 1.71;
+    }
+    .modal-form__policy--text {
+        cursor: pointer;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
