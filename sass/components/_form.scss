@@ -63,6 +63,11 @@
   color: var(--text-main-color);
 }
 
+&__button{
+  display: flex;
+  justify-content: center;
+}
+
 &__textarea {
     margin-top: 4px;
     padding: 12px 16px 12px 16px;

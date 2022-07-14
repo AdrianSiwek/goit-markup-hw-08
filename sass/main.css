@@ -171,7 +171,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .policy-button {
-    margin-left: 124px;
     margin-top: 30px;
   }
   .policy__link {
@@ -243,6 +242,10 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-main-color);
+}
+.form-label__button {
+  display: flex;
+  justify-content: center;
 }
 .form-label__textarea {
   margin-top: 4px;
