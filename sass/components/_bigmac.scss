@@ -135,3 +135,17 @@
         display: none;
     }
 }
+
+//desktop//
+@media screen and (min-width: 1200px){
+    .menu-container{
+        display: none;
+    }
+}
+
+//tablet//
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .menu-container{
+        display: none;
+    }
+}
