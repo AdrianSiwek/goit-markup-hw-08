@@ -29,6 +29,8 @@
 }
 
 .modal-form__policy--text {
+    display: flex;
+    justify-content: space-between;
     cursor: pointer;
     font-family: "Roboto";
     font-style: normal;
