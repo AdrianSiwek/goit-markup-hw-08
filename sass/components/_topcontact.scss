@@ -9,20 +9,12 @@
   letter-spacing: 0.02em;
 
 &__link {
+  color: #757575;
+  fill: #afb1b8;
   text-decoration: none;
-  transition: var(--transition);
-  transition-property: color, fill;
-
-  &--hover{
-    fill: #afb1b8;
-    color: var(--brand-contact-color);
-  }
-
-  &--hover{
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color;
-  }
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 
   &--hover:active,
   &--hover:hover,
@@ -38,7 +30,7 @@
 &__icon {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color,fill;
+  transition-property: fill;
 
 &--phone {
   margin-right: 6px;
