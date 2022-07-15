@@ -915,6 +915,11 @@ img {
     margin-bottom: -5px;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .elaboration {
+    margin-bottom: -30px;
+  }
+}
 .segregate {
   justify-content: center;
   display: flex;
