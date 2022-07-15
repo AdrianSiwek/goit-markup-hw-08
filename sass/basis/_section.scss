@@ -66,6 +66,10 @@
 //mobile
 @media screen and (min-width: 450px) and (max-width: 767px) {
 .section{
+  &-offer{
+    position: sticky;
+  }
+  
 &_segregate {
     display: none;
     overflow: hidden;
