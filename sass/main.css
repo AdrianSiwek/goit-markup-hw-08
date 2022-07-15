@@ -703,16 +703,16 @@ img {
 .top-contact__link--end {
   margin-left: 30px;
 }
-.top-contact__link__icon {
+.top-contact__icon {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill;
 }
-.top-contact__link__icon--phone {
+.top-contact__icon--phone {
   margin-right: 6px;
   margin-bottom: -1px;
 }
-.top-contact__link__icon--mail {
+.top-contact__icon--mail {
   margin-right: 6px;
   margin-bottom: -3px;
 }
@@ -877,6 +877,8 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--brand-contact-color);
+}
+.elaboration__description--margin {
   margin-top: 10px;
   margin-bottom: 30px;
 }
@@ -885,7 +887,7 @@ img {
   .elaboration {
     margin: -15px -15px;
   }
-  .elaboration .elaboration__item {
+  .elaboration__item {
     width: calc(50% - 30px);
     max-height: 251px;
     margin: 15px 15px;
@@ -908,8 +910,9 @@ img {
   .elaboration__name {
     margin-bottom: 10px;
   }
-  .elaboration__description {
+  .elaboration__description--margin {
     margin-top: 10px;
+    margin-bottom: -5px;
   }
 }
 .segregate {
@@ -1015,7 +1018,7 @@ img {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin: -15px -15px;
+    margin: -15px -15px 0 -15px;
   }
   .team__component {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
