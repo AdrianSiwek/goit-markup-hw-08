@@ -1,4 +1,4 @@
-<a hreff="https://adriansiwek.github.io/goit-markup-hw-08/">LIVE SERVER</a>
+<a href="https://adriansiwek.github.io/goit-markup-hw-08/">LIVE SERVER</a>
 
 Effective solution for your business
 
