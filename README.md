@@ -3,4 +3,4 @@
 Effective solution for your business
 
 
-<h1 class="ls">My first website written with html, css and scss</h1>
+<h1 class="ls">My first website written in pure html, css and scss. The BEM methodology was also used here.</h1>
